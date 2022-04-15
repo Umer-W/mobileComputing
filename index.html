@@ -13,7 +13,7 @@
     <div id="top">
 
         <h1 id="firstHeading">Mobile Computing Assignment</h1>
-        <h3 id="secondHeading">Tutorial About Git </h3>
+        <h3 class="secondHeading">Tutorial About Git </h3>
     </div>
     <h1 class="thirdHeading">Git basics</h1>
     <p>
@@ -51,6 +51,92 @@
         <li>Developers can revert to earlier versions of a project.</li>
 
     </ol>
+    <h1 class="fourthHeading">
+        Information About Different Commands
+    </h1>
+    <h3 class="secondHeading">Git Init</h3>
+    <p>The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to
+        a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an
+        initialized repository, so this is usually the first command you'll run in a new project.
+        <br>
+        By default, git init will initialize the Git configuration to the .git subdirectory path. The subdirectory path
+        can be modified and customized if you would like it to live elsewhere. You can set the $GIT_DIR environment
+        variable to a custom path and git init will initialize the Git configuration files there. Additionally you can
+        pass the --separate-git-dir argument for the same result. A common use case for a separate .git subdirectory is
+        to keep your system configuration "dotfiles" (.bashrc, .vimrc, etc.) in the home directory while keeping the
+        .git folder elsewhere.
+    </p>
+    <h3 class="secondHeading">Git Status</h3>
+    <p>
+        The git status command displays the state of the working directory and the staging area. It lets you see which
+        changes have been staged, which haven’t, and which files aren’t being tracked by Git. Status output does not
+        show you any information regarding the committed project history.
+
+    </p>
+    <h3 class="secondHeading">Git Add</h3>
+    <p>The git add command adds a change in the working directory to the staging area. It tells Git that you want to
+        include updates to a particular file in the next commit. However, git add doesn't really affect the repository
+        in any significant way
+    </p>
+    <h3 class="secondHeading">Git Commit</h3>
+    <p>The git commit command captures a snapshot of the project's currently staged changes. Committed snapshots can be
+        thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to. Prior to
+        the execution of git commit, The git add command is used to promote or 'stage' changes to the project that will
+        be stored in a commit. These two commands git commit and git add are two of the most frequently used
+    </p>
+    <h3 class="secondHeading">Git Remote</h3>
+    <p>The git remote command lets you create, view, and delete connections to other repositories. Remote connections
+        are more like bookmarks rather than direct links into other repositories. Instead of providing real-time access
+        to another repository, they serve as convenient names that can be used to reference a not-so-convenient URL.
+
+
+    </p>
+    <h3 class="secondHeading">Git Push</h3>
+    <p>The git push command is used to upload local repository content to a remote repository. Pushing is how you
+        transfer commits from your local repository to a remote repo. It's the counterpart to git fetch, but whereas
+        fetching imports commits to local branches, pushing exports commits to remote branches. Remote branches are
+        configured using the git remote command. Pushing has the potential to overwrite changes, caution should be taken
+        when pushing. These issues are discussed below.
+
+
+    </p>
+    <h3 class="secondHeading">Git Pull</h3>
+    <p>The git pull command is used to fetch and download content from a remote repository and immediately update the
+        local repository to match that content. Merging remote upstream changes into your local repository is a common
+        task in Git-based collaboration work flows. The git pull command is actually a combination of two other
+        commands, git fetch followed by git merge. In the first stage of operation git pull will execute a git fetch
+        scoped to the local branch that HEAD is pointed at. Once the content is downloaded, git pull will enter a merge
+        workflow. A new merge commit will be-created and HEAD updated to point at the new commit.
+
+
+    </p>
+    <h3 class="secondHeading">Git Branch</h3>
+    <p>Use this command to view the information about branches in a repository.
+        To delete a branch run command: git branch -d branchname
+    </p>
+    <h3 class="secondHeading">Git CLone</h3>
+    <p>git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new
+        directory, at another location. The original repository can be located on the local filesystem or on remote
+        machine accessible supported protocols. The git clone command copies an existing Git repository. This is sort of
+        like SVN checkout, except the “working copy” is a full-fledged Git repository—it has its own history, manages
+        its own files, and is a completely isolated environment from the original repository.
+
+        As a convenience, cloning automatically creates a remote connection called "origin" pointing back to the
+        original repository. This makes it very easy to interact with a central repository. This automatic connection is
+        established by creating Git refs to the remote branch heads under refs/remotes/origin and by initializing
+        remote.origin.url and remote.origin.fetch configuration variables.
+
+    </p>
+    <h3 class="secondHeading">Git Check out</h3>
+    <p>The git pull command is used to fetch and download content from a remote repository and immediately update the
+        local repository to match that content. Merging remote upstream changes into your local repository is a common
+        task in Git-based collaboration work flows. The git pull command is actually a combination of two other
+        commands, git fetch followed by git merge. In the first stage of operation git pull will execute a git fetch
+        scoped to the local branch that HEAD is pointed at. Once the content is downloaded, git pull will enter a merge
+        workflow. A new merge commit will be-created and HEAD updated to point at the new commit.
+
+
+    </p>
 
 
 </body>
